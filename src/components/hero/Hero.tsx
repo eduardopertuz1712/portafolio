@@ -99,7 +99,7 @@ export default function Hero() {
             </button>
           </Link>
 
-          <Link href="/cv">
+          <Link href="/cv-eduardo-pertuz.pdf" download >
             <button
               className="
                 border
