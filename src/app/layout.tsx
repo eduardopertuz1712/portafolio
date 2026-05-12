@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 import { Toaster } from "sonner";
-import Navbar from "@/components/navbar/Navbar";
+import Sidebar from "@/components/Sidebar/Siderbar";
 import Footer from "@/components/footer/Footer";
 import Providers from "@/components/providers/Providers";
 import ScrollProgress from "@/components/ui/ScrollProgress";
@@ -21,13 +21,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
-      <body className="bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-100 transition-colors duration-300">
+      <body className="md:ml-72 bg-slate-50 dark:bg-slate-950 text-slate-950 dark:text-slate-100 transition-colors duration-300">
         <Providers>
           <ScrollProgress />
 
           <BackgroundEffects />
 
-          <Navbar />
+          <Sidebar />
 
           <main>{children}</main>
 
