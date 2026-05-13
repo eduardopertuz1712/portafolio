@@ -18,6 +18,14 @@ export default function Sidebar() {
 
   return (
     <>
+      {/* Overlay */}
+      {open && (
+        <div
+          onClick={() => setOpen(false)}
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+        />
+      )}
+
       {/* Mobile Button */}
       <button
         onClick={() => setOpen(!open)}
@@ -45,7 +53,7 @@ export default function Sidebar() {
       >
         {/* Profile */}
         <div className="flex flex-col items-center">
-
+          
           <img
             src="/images/profile/profile.png"
             alt="Foto de Eduardo"
@@ -75,13 +83,12 @@ export default function Sidebar() {
 
           <Link
             href="/"
+            onClick={() => setOpen(false)}
             className="
               flex items-center gap-4
-              p-4
-              rounded-2xl
+              p-4 rounded-2xl
               text-slate-700 dark:text-slate-300
-              hover:bg-cyan-500
-              hover:text-white
+              hover:bg-cyan-500 hover:text-white
               transition
             "
           >
@@ -91,13 +98,12 @@ export default function Sidebar() {
 
           <Link
             href="/sobre-mi"
+            onClick={() => setOpen(false)}
             className="
               flex items-center gap-4
-              p-4
-              rounded-2xl
+              p-4 rounded-2xl
               text-slate-700 dark:text-slate-300
-              hover:bg-cyan-500
-              hover:text-white
+              hover:bg-cyan-500 hover:text-white
               transition
             "
           >
@@ -107,13 +113,12 @@ export default function Sidebar() {
 
           <Link
             href="/proyectos"
+            onClick={() => setOpen(false)}
             className="
               flex items-center gap-4
-              p-4
-              rounded-2xl
+              p-4 rounded-2xl
               text-slate-700 dark:text-slate-300
-              hover:bg-cyan-500
-              hover:text-white
+              hover:bg-cyan-500 hover:text-white
               transition
             "
           >
@@ -123,13 +128,12 @@ export default function Sidebar() {
 
           <Link
             href="/contacto"
+            onClick={() => setOpen(false)}
             className="
               flex items-center gap-4
-              p-4
-              rounded-2xl
+              p-4 rounded-2xl
               text-slate-700 dark:text-slate-300
-              hover:bg-cyan-500
-              hover:text-white
+              hover:bg-cyan-500 hover:text-white
               transition
             "
           >
