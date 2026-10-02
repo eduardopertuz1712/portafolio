@@ -14,7 +14,7 @@ export type Project = {
   status: Localized;
   description: Localized;
   featured: boolean;
-  kind: 'eduardo' | 'residencias';
+  kind: 'eduardo' | 'residencias' | 'sifcao' | 'pos' | 'barberia' | 'happypet' | 'peliculas' | 'unity';
   stack: string[];
   github?: string;
   context: Localized;
